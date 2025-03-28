@@ -21,4 +21,4 @@ A form for ordering pizza <br>
 <li>Name</li>
 <li>Size</li>
 <li>Toppings</li>
-<li>Special Requests</li>
+<li>Special Instructions</li>
