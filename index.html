@@ -1,41 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizza Order Form</title>
-</head>
-<body>
-   <form>
-    <label for="first-last-name">Name</label>
-    <input type="text"name="first-last-name">
-    <br>
-    <br>
-    <label for="size">Pizza Size</label>
-    <select name="size" id="size">
-    <option value="Extra Large">Extra Large</option>
-    <option value="Large">Large</option>
-    <option value="Medium">Medium</option>
-    <option value="Small">Small</option>
-</select>
-<p for="Toppings">Toppings</p>
-<input type="checkbox" name="Pepperoni" id="Pepperoni"/>
-<label for="Pepperoni">Pepperoni</label>
-<input type="checkbox" name="Ham" id="Ham"/>
-<label for="Ham">Ham</label>
-<input type="checkbox" name="Beef" id="Beef"/>
-<label for="Beef">Beef</label>
-<input type="checkbox" name="Olny Cheese" id="Only Cheese"/>
-<label for="Only Cheese">Only Cheese</label>
-<br>
-<br>
+  </head>
+  <body>
+    <form>
+      <label for="first-last-name">Name</label>
+      <input type="text" name="first-last-name" />
+      <br />
+      <br />
+      <label for="size">Pizza Size</label>
+      <select name="size" id="size">
+        <option value="Extra Large">Extra Large</option>
+        <option value="Large">Large</option>
+        <option value="Medium">Medium</option>
+        <option value="Small">Small</option>
+      </select>
+      <p for="Toppings">Toppings</p>
+      <input type="checkbox" name="Pepperoni" id="Pepperoni" />
+      <label for="Pepperoni">Pepperoni</label>
+      <input type="checkbox" name="Ham" id="Ham" />
+      <label for="Ham">Ham</label>
+      <input type="checkbox" name="Beef" id="Beef" />
+      <label for="Beef">Beef</label>
+      <input type="checkbox" name="Peppers" id="Peppers" />
+      <label for="Peppers">Peppers</label>
+      <br />
+      <br />
 
-<label for="delivery instructions">Delivery Instructions</label>
-<textarea id="delivery instructions" name="delivery instructions" rows="4" cols="50">
-</textarea>
-<input type="submit" value="Submit">
-
-   </form> 
-    
-</body>
+      <label for="delivery instructions">Delivery Instructions</label>
+      <textarea
+        id="delivery instructions"
+        name="delivery instructions"
+        rows="4"
+        cols="50"
+      ></textarea>
+      <input type="submit" value="Submit" />
+    </form>
+    <br>
+ <table>
+    <tr>
+     <th>Customer Name</th>
+     <th>Pizza Size</th>
+     <th>Toppings</th>
+     <th>Delivery Instructions<th>   
+    </tr>
+    <tr>
+        <td>Janelle Monet</td>
+        <td>X Large</td>
+        <td>Ham<br>Beef</td>
+        <td>Ring doorbell and leave at door</td>
+    </tr>
+    <tr>
+        <td>Alfred Hitchcock</td>
+        <td>Small</td>
+        <td>Peppers</td>
+        <td>Large house with wroth iron gate. Will be dark</td>
+    </tr>
+    <tr>
+        <td>Micheal Jordan</td>
+        <td>Large</td>
+        <td>Pepperoni<br>Peppers<br>Ham</td>
+        <td>Drive up 1st driveway, hand to doorman</td>
+    </tr>
+    <tr>
+        <td>Minnie Mouse</td>
+        <td>Medium</td>
+        <td>Pepperoni<br>Peppers<br>Ham<br>Beef</td>
+        <td>Knock on tiny door below normal door</td>
+    </tr>
+ </table>   
+  </body>
 </html>
