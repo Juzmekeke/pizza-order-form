@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+body{background-color:#e9d8a6;
+margin: 25px;   
+}
+
+
+*{
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight 300>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+table{margin: 10px;
+}
+p{margin-top: 40px; }
+.space{margin-top: 40px;}
+.button{padding: 8px; font-size: large;}
+.button:hover { background-color: #cd3b3b;}

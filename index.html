@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizza Order Form</title>
@@ -13,30 +14,31 @@
 
       td,
       th {
-        border: 1px solid #dddddd;
+        border: 2px dashed #cd3b3b;
         text-align: left;
         padding: 8px;
       }
 
       tr:nth-child(even) {
-        background-color: #dddddd;
+        background-color: #cd3b3b;
       }
     </style>
   </head>
   <body>
+   
     <form>
-      <label for="first-last-name">Name</label>
-      <input type="text" name="first-last-name" />
+      <label class="name" for="first-last-name">Name</label>
+      <input class="name" type="text" name="first-last-name"/>
       <br />
       <br />
-      <label for="size">Pizza Size</label>
-      <select name="size" id="size">
+      <label class="space" for="size">Pizza Size</label>     
+      <select class="space" name="size" id="size">
         <option value="Extra Large">Extra Large</option>
         <option value="Large">Large</option>
         <option value="Medium">Medium</option>
         <option value="Small">Small</option>
       </select>
-      <p for="Toppings">Toppings</p>
+      <p for="Toppings">Toppings </p>
       <input type="checkbox" name="Pepperoni" id="Pepperoni" />
       <label for="Pepperoni">Pepperoni</label>
       <input type="checkbox" name="Ham" id="Ham" />
@@ -45,17 +47,27 @@
       <label for="Beef">Beef</label>
       <input type="checkbox" name="Peppers" id="Peppers" />
       <label for="Peppers">Peppers</label>
+      <input type="checkbox" name="Peppers" id="Peppers" />
+      <label for="Olives">Olives</label>
+      <input type="checkbox" name="Olives" id="Olives" />
+      <label for="Shrimp">Shrimp</label>
+      <input type="checkbox" name="Shrimp" id="Shrimp" />
+      <label for="Crawfish">Crawfish</label>
+      <div><img src="pizza2.png" width="300"></div>
       <br />
       <br />
 
-      <label for="delivery instructions">Delivery Instructions</label>
-      <textarea
+      <label class="space" for="delivery instructions">Delivery Instructions</label>
+      <br>
+      <textarea 
+      
         id="delivery instructions"
         name="delivery instructions"
         rows="4"
         cols="50"
       ></textarea>
-      <input type="submit" value="Submit" />
+      <br>
+      <input class="button" type="submit" value="Submit" />
     </form>
     <br />
     <table>
