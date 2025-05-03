@@ -25,33 +25,34 @@
     </style>
   </head>
   <body>
+    <h3>Pizza My Heart</h3>
    
-    <form>
+    <form id="form">
       <label class="name" for="first-last-name">Name</label>
-      <input class="name" type="text" name="first-last-name"/>
+      <input id = "nameInput" class="name" type="text" name="first-last-name"/>
       <br />
       <br />
       <label class="space" for="size">Pizza Size</label>     
-      <select class="space" name="size" id="size">
+      <select id = "sizeInput" class="space" name="size" id="size">
         <option value="Extra Large">Extra Large</option>
         <option value="Large">Large</option>
         <option value="Medium">Medium</option>
         <option value="Small">Small</option>
       </select>
-      <p for="Toppings">Toppings </p>
-      <input type="checkbox" name="Pepperoni" id="Pepperoni" />
+      <p for="Toppings" id="toppings">Toppings </p>
+      <input id = "checkboxPep" type="checkbox" name="Pepperoni" id="Pepperoni" />
       <label for="Pepperoni">Pepperoni</label>
-      <input type="checkbox" name="Ham" id="Ham" />
+      <input id = "checkboxHam" type="checkbox" name="Ham" id="Ham" />
       <label for="Ham">Ham</label>
-      <input type="checkbox" name="Beef" id="Beef" />
+      <input id="checkboxBeef" type="checkbox" name="Beef" id="Beef" />
       <label for="Beef">Beef</label>
-      <input type="checkbox" name="Peppers" id="Peppers" />
+      <input id="checkboxPepper" type="checkbox" name="Peppers" id="Peppers" />
       <label for="Peppers">Peppers</label>
-      <input type="checkbox" name="Peppers" id="Peppers" />
+      <input id="inputOlives" type="checkbox" name="Olives" id="Olives" />
       <label for="Olives">Olives</label>
-      <input type="checkbox" name="Olives" id="Olives" />
+      <input id="inputShrimp" type="checkbox" name="Shrimp" id="Shrimp" />
       <label for="Shrimp">Shrimp</label>
-      <input type="checkbox" name="Shrimp" id="Shrimp" />
+      <input id="inputCrawfish" type="checkbox" name="Crawfish" id="Crawfish" />
       <label for="Crawfish">Crawfish</label>
       <div><img src="pizza2.png" width="300"></div>
       <br />
@@ -61,16 +62,17 @@
       <br>
       <textarea 
       
-        id="delivery instructions"
+        id="deliveryInstructions" 
+        <!-- i just deleted the space --
         name="delivery instructions"
         rows="4"
         cols="50"
       ></textarea>
       <br>
-      <input class="button" type="submit" value="Submit" />
+      <input id="button" class="button" type="submit" value="Submit" />
     </form>
     <br />
-    <table>
+    <table id="table">
       <tr>
         <th>Customer Name</th>
         <th>Pizza Size</th>
@@ -104,5 +106,6 @@
         <td>Knock on tiny door below normal door</td>
       </tr>
     </table>
+    <script src="script.js" defer></script>
   </body>
 </html>
