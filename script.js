@@ -37,7 +37,12 @@
 // const inputElement = document.getElementById("checkboxShrimp")
 // const inputElement = document.getElementById("checkboxCrawfish")
 // const inputElement = document.getElementById("deliveryIstructions")
-// tableRowElement.innerHTML = 
+// let toppings type = checkboxes = [    
+// pepperoni,
+// ham,
+// beef,
+// ];
+// / tableRowElement.innerHTML = 
 // tableDataElement.innerHTML =
 
 // tableElement.appendchild(tableRowElement)
@@ -49,12 +54,15 @@
 
 const form = document.getElementById("form")
 const tableElement = document.getElementById("table")
+const textarea = document.getElementById("dataInput");
+const deliveryInstructionsElement = document.getElementById("deliveryInstructions")
 
 const tableRowElement = document.createElement("tr")
 const nameCell = document.createElement("td")
 const sizeCell = document.createElement("td")
 const toppingsCell = document.createElement("td")
-
+// const dataCell = document.createElement("td")
+const deliveryInstructionsCell = document.createElement("td")
 
 
 
@@ -64,17 +72,31 @@ form.addEventListener("submit",function(event){
     //   });
 event.preventDefault();
 
+// const data = textarea.value;
 nameCell.innerHTML = nameInput.value
 sizeCell.innerHTML = sizeInput.value
+// dataCell.innerHTML = textarea.value;
+deliveryInstructionsCell.innerHTML = deliveryInstructions.value
 
 tableElement.appendChild(tableRowElement)
 tableRowElement.appendChild(nameCell)
 tableRowElement.appendChild(sizeCell)
 tableRowElement.appendChild(toppingsCell)
+tableRowElement.appendChild(deliveryInstructionsCell)
 
 
     //   onclick sumbit form with information and add information to appended row on table
 });
+
+function appendData() {
+    const textarea = document.getElementById("dataInput");
+    const tableBody = document.getElementById("dataOutput").getElementsByTagName("tbody")[0];
+    const data = textarea.value;
+  
+    const newRow = tableBody.insertRow();
+    const newCell = newRow.insertCell();
+    newCell.textContent = data;
+  }
 
 // function selectAllCheckboxes(checked) {
 //     const checkboxes = document.querySelectorAll('input[type="checkbox"]');
