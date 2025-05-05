@@ -54,7 +54,7 @@
 
 const form = document.getElementById("form")
 const tableElement = document.getElementById("table")
-const textarea = document.getElementById("dataInput");
+// const textarea = document.getElementById("dataInput");
 const deliveryInstructionsElement = document.getElementById("deliveryInstructions")
 
 const tableRowElement = document.createElement("tr")
@@ -77,6 +77,7 @@ nameCell.innerHTML = nameInput.value
 sizeCell.innerHTML = sizeInput.value
 // dataCell.innerHTML = textarea.value;
 deliveryInstructionsCell.innerHTML = deliveryInstructions.value
+// toppingsCell.innerHTML = checkbox.value
 
 tableElement.appendChild(tableRowElement)
 tableRowElement.appendChild(nameCell)
@@ -84,24 +85,44 @@ tableRowElement.appendChild(sizeCell)
 tableRowElement.appendChild(toppingsCell)
 tableRowElement.appendChild(deliveryInstructionsCell)
 
+// function selectAllCheckboxes(checked) {
+//     const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+//     for (let checkbox of checkboxes) {
+//                 if (checkbox.checked) toppingsCell.innerHTML += checkbox.value
+
 
     //   onclick sumbit form with information and add information to appended row on table
 });
 
-function appendData() {
-    const textarea = document.getElementById("dataInput");
-    const tableBody = document.getElementById("dataOutput").getElementsByTagName("tbody")[0];
-    const data = textarea.value;
+// function selectAllCheckboxes(checked) {
+//         const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+//         for (let checkbox of checkboxes) {
+//                     if (checkbox.checked) toppingsCell.innerHTML += checkbox.value
+//         }}
+// type.checkboxes.forEach(checkbox.checked)
+//   inputElement.value = toppingsCell.innerHTML ;
+
+
+// checkboxes.forEach(){
+//     checkbox.checked = toppingsCell.innerHTML 
+//         toppingsCell.innerHTML = inputElement.value;
+//     }
+
+// function appendData() {
+//     const textarea = document.getElementById("dataInput");
+//     const tableBody = document.getElementById("dataOutput").getElementsByTagName("tbody")[0];
+//     const data = textarea.value;
   
-    const newRow = tableBody.insertRow();
-    const newCell = newRow.insertCell();
-    newCell.textContent = data;
-  }
+//     const newRow = tableBody.insertRow();
+//     const newCell = newRow.insertCell();
+//     newCell.textContent = data;
+//   }
 
 // function selectAllCheckboxes(checked) {
 //     const checkboxes = document.querySelectorAll('input[type="checkbox"]');
 //     checkboxes.forEach(checkbox => {
 //       checkbox.checked = pizzaToppingsCell.innerHTML += inputElement.value;)
+
 
 
 // checkboxes.forEach(checkbox => {
@@ -129,4 +150,3 @@ function appendData() {
 // for (let inputElement of toppings) {
 //     if (inputElement.checked) toppingsCell.innerHTML =+ inputElement.value
 // }
-// })
